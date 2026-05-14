@@ -3,6 +3,10 @@ const convertBtn = document.getElementById("convertBtn");
 const downloadBtn = document.getElementById("downloadBtn");
 const clearBtn = document.getElementById("clearBtn");
 
+const pgnInput = document.getElementById("pgnInput");
+const jsonOutput = document.getElementById("jsonOutput");
+const statusText = document.getElementById("status");
+
 let latestJSON = null;
 
 const samplePGN = `[Event "RK opening tree test 1: Knight openings"]
