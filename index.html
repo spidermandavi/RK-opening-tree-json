@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <title>Racing Kings PGN Converter</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="background-glow"></div>
+
+  <main class="container">
+
+    <header class="hero">
+      <h1>Racing Kings PGN Converter</h1>
+      <p>
+        Convert Lichess study PGNs into expandable JSON opening trees.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>Paste PGN</h2>
+
+      <textarea
+        id="pgnInput"
+        placeholder="Paste your full PGN here..."
+      ></textarea>
+
+      <div class="button-row">
+        <button id="convertBtn">Convert PGN</button>
+        <button id="downloadBtn">Download JSON</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="output-header">
+        <h2>Generated JSON</h2>
+        <span id="status">Waiting...</span>
+      </div>
+
+      <pre id="jsonOutput"></pre>
+    </section>
+
+    <section class="card info-card">
+      <h2>JSON Features</h2>
+
+      <ul>
+        <li>Stores complete PGN metadata</li>
+        <li>Stores move comments</li>
+        <li>Stores move variations</li>
+        <li>Expandable tree structure</li>
+        <li>Supports multiple studies</li>
+        <li>Unique IDs for future editing</li>
+        <li>Optimized for training systems</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="js/parser.js"></script>
+  <script src="js/exporter.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
